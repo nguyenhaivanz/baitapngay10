@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let tiengoc = parseInt(prompt("nhap so tien goc ban vay"));
+let laisuat = parseInt(prompt("nhapj lai suat"));
+let thoigian =parseInt(prompt("nhap so thang ban muon vay"))
+while (tiengoc<=0|| thoigian<=0||laisuat<=0) {
+    alert("moi ban nhap lai");
+    tiengoc = parseInt(prompt("nhap so tien goc ban vay"));
+    laisuat = parseInt(prompt("nhapj lai suat"));
+    thoigian =parseInt(prompt("nhap so thang ban muon vay"));
+}
+for (i=1;i<=thoigian;i++) {
+    tiengoc+= laisuat*tiengoc/100;
+}
+document.write(tiengoc);
+</script>
+</body>
+</html>
